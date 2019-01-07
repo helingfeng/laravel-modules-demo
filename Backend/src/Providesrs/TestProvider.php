@@ -21,11 +21,11 @@ class TestProvider extends ServiceProvider
             $router->get('/test/plugin', 'IndexController@index');
         });
 
-        $this->loadViewsFrom(__DIR__ . '/../../Frontend/views', 'test-plugin');
+        $this->loadViewsFrom(__DIR__ . '/../../../Frontend/views', 'test-plugin');
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../../Frontend/assets' => public_path('test_plugin/assets')
+                __DIR__ . '/../../../Frontend/assets' => public_path('test_plugin/assets')
             ], 'file-manage-assets');
         }
 
