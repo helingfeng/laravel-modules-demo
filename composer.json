@@ -8,14 +8,14 @@
   ],
   "autoload": {
     "psr-4": {
-      "TestPlugin\\Backend\\": "Backend/src"
+      "LaravelModulesDemo\\Backend\\": "Backend/src"
     }
   },
   "require": {},
   "extra": {
     "laravel": {
       "providers": [
-        "TestPlugin\\Backend\\Providers\\TestProvider"
+        "LaravelModulesDemo\\Backend\\Providers\\TestProvider"
       ]
     }
   },
