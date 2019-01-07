@@ -1,0 +1,23 @@
+{
+  "name": "chester/testPlugin",
+  "authors": [
+    {
+      "name": "chester",
+      "email": "857190327@qq.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "TestPlugin\\Backend\\": "Backend/src"
+    }
+  },
+  "require": {},
+  "extra": {
+    "laravel": {
+      "providers": [
+        "TestPlugin\\Backend\\Providers\\TestProvider"
+      ]
+    }
+  },
+  "prefer-stable": true
+}
