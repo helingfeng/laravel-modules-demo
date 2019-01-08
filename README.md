@@ -26,7 +26,7 @@ $ composer require wikimedia/composer-merge-plugin
 ### 配置 `include` 指定模块所在路径
 
 下面配置，使用 `*` 通配符指向 `modules` 下所有模块，具体参数介绍：https://github.com/wikimedia/composer-merge-plugin
-```markdown
+```shell
 "extra": {
     "merge-plugin": {
       "include": [
