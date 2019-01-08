@@ -36,7 +36,7 @@ $ git clone https://github.com/Chester-Hee/LaravelModulesDemo.git
 
 ### 项目配置依赖
 
-修改 `app.conf` 手工添加 `provider`，`Laravel 5.5` 支持 `auto discover`，但是 `composer-merge-plugin` 下，无法正在执行，所以暂时使用手工添加配置
+修改 `app.conf` 手工添加 `provider`，`Laravel 5.5` 支持 `auto discover`，但是 `composer-merge-plugin` 下，无法正常执行，所以暂时使用手工添加配置
 
 ```markdown
 "providers" => [
