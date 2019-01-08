@@ -66,6 +66,17 @@ $ cd laravel
 $ composer install
 ```
 
+> 如果需要解决自动加载 `Provider` 问题，可以在项目引入命令 `CustomPackagesDiscover.php`，实现自动加载
+
+需要在项目 `composer.json` 添加配置
+
+```
+"post-autoload-dump": [
+    ...
+    "@php artisan command:discover"
+]
+```
+
 ### `LaravelModulesDemo` 需要进行前端构建
 
 ```shell
