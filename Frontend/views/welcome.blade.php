@@ -14,5 +14,6 @@
            <h1 v-html="message"></h1>
        </div>
     </body>
-    <script src="{{ asset('test_plugin/assets/main.js',true) }}"></script>
+    {{-- assset http / https from the second parameter --}}
+    <script src="{{ asset('test_plugin/assets/main.js') }}"></script>
 </html>
