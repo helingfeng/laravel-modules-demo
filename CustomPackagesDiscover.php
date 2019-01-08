@@ -39,7 +39,8 @@ class CustomPackagesDiscover extends Command
      */
     public function handle()
     {
-        $manifestPackages = base_path() . '/bootstrap/cache/packages.php';
+        $manifestPackages = $this->laravel->getCachedPackagesPath();
+        //base_path() . '/bootstrap/cache/packages.php';
         $modulesPath = base_path() . DIRECTORY_SEPARATOR . $this->moduleFolder;
 
         $discoverPackages = array();
